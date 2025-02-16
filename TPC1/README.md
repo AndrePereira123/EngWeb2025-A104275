@@ -42,6 +42,12 @@ Comecei por simplemenste substituir os URL's utilizados no codigo produzido na a
 entre outros.
 
 Com o menu lateral disponibilizei 3 opções : "Reparações", "Viaturas" e "Intervenções". Estas permitem listar os dados com os formatos relevantes.
-Ao clicar em "Reparações", o utilizador é direncionado para "[http://localhost:12000/reparacoes](https://github.io/AndrePereira123/EngWeb2025-A104275/main/TPC1/Paginas%20demonstrativas/reparacoes.htm)"
 
-# Ficheiros htm de exemplo
+Ao clicar em "Reparações", o utilizador é direcionado para "[http://localhost:12000/reparacoes](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/reparacoes.htm)", onde são listados todos os clientes num formato "nome - marca de viatura - modelo de viatura" ordenados alfabeticamente. ([Filtro de reparções para letra "J"](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/reparacoes_filtro_J.htm))
+
+Ao clicar em "Viaturas", o utilizador é direcionado para "[http://localhost:12000/viaturas](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/viaturas.htm)", a interface é similar mas desta vez são listados os veículos num formato "marca - modelo - matricula" ordenados alfabeticamente pela marca. ([Filro de veiculos para letra "J"](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/viaturas_filtro_J.htm))
+
+Finalmente com a opção "Intervenções" é disponivilizada uma listagem de todas as intervenções em sub conjuntos dependendo do cliente associado, ou seja , primeiro vemos o nome do cliente e por baixo dele de forma identada todas as intervenções associadas ao mesmo num formato "codigo - nome", na página "[http://localhost:12000/intervencoes](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/intervencoes.htm)"; mais uma vez os nomes estão ordenados alfabeticamenrte. ([Filtro de intervenções para a letra "J"](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/intervencoes_filtro_J.htm))
+
+Em quakquer um dos 3 modos de listagem selecionar o cliente/viatura direciona o utilizador para "http://localhost:12000/reparacoes/x" onde x representa o nif do cliente associado. Aqui todos os detalhes da "reparação" da lista de reparações são impressos e temos a opção de "Voltar" que re direciona o utilizador para a página anterior (Exemplo: [nif-516835029](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/516835029.htm) || [nif-414845795](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc1/414845795.htm)).
+A impressção é "rude", direta do json associado ao usufruir da função "JSON.stringify()" para o efeito.
