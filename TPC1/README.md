@@ -3,6 +3,8 @@
 
 ## Desafio proposto nesta semana
 
+## Requisitos (tal como na aula)
+
 ## Comeco baseado em trabalho desenvolvido na aula pratica
 
 ## Substituicao para novo dataset

@@ -7,13 +7,10 @@ semanalmente na UC opcional de Engenharia Web do terceiro ano da licenciatura em
 na Universidade do Minho.
 
 Tarefas semanais:
-<ul>
-  <li>TPC1 - XXX</li>
-  <li>TPC2 - XXX</li>
-  <li>TPC3 - XXX</li>
-  <li>TPC4 - XXX</li>
-  <li>TPC5 - XXX</li>
-  <li>TPC6 - XXX</li>
-  <li>TPC7 - XXX</li>
-  <li>TPC8 - XXX</li>
-</ul>
+  - [TPC1 - Serviço em nodejs com recurso a API de dados do json-server](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC1)
+  - [TPC2 - XXX]
+  - [TPC3 - XXX]
+  - [TPC4 - XXX]
+  - [TPC5 - XXX]
+  - [TPC6 - XXX]
+  - [TPC7 - XXX]
