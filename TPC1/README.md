@@ -41,6 +41,7 @@ Comecei por simplemenste substituir os URL's utilizados no codigo produzido na a
   
 entre outros.
 
-Com o menu lateral disponibilizei 3 opções : "Reparações", "Viaturas" e "Intervenções".
+Com o menu lateral disponibilizei 3 opções : "Reparações", "Viaturas" e "Intervenções". Estas permitem listar os dados com os formatos relevantes.
+Ao clicar em "Reparações", o utilizador é direncionado para "[http://localhost:12000/reparacoes](https://github.io/AndrePereira123/EngWeb2025-A104275/main/TPC1/Paginas%20demonstrativas/reparacoes.htm)"
 
 # Ficheiros htm de exemplo
