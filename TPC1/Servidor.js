@@ -63,7 +63,7 @@ http.createServer((req, res) => {
         <body>
             <div class="sidenav">
                 <a href="/reparacoes">Reparacoes</a>
-                <a href="/viaturas">Viaturas/clientes</a>
+                <a href="/viaturas">Viaturas</a>
                 <a href="/intervencoes">Intervenções</a>
             </div>
         </body>
@@ -110,12 +110,20 @@ http.createServer((req, res) => {
                 axios.get("http://localhost:3000/reparacoes")
                 .then(resp => {
                     var reparacoes = resp.data;
-                    const viaturas = reparacoes.map(rep => rep.viatura).sort((a, b) => a.marca.localeCompare(b.marca));
-                    res.write(`<h1>Viaturas</h1>`);
+                    const viaturas = reparacoes.sort((a, b) => a.viatura.marca.localeCompare(b.viatura.marca));
+                    res.write(`
+                        <h1>Viaturas</h1>
+                        <hr style="border: 1px solid white; margin: 10px 0;">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            ${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(letter => 
+                                `<a href="/viaturas?letter=${letter}" style="margin: 0 5px; text-decoration: none; color: lightblue; font-size: 18px;">${letter}</a>`
+                            ).join(' - ')}
+                        </div>
+                    `);
 
                     viaturas.forEach(element => {
                         res.write(`<li>
-                            <a href='/viaturas/${element.matricula}'> ${element.marca} - ${element.modelo}</a>
+                            <a href='/reparacoes/${element.nif}'> ${element.viatura.marca} - ${element.viatura.modelo} - ${element.viatura.matricula}</a>
                             </li>`);
                         }
                     );
@@ -129,8 +137,76 @@ http.createServer((req, res) => {
             }
             else if (req.url === "/intervencoes")
             {
+                axios.get("http://localhost:3000/reparacoes")
+                .then(resp => {
+                    var reparacoes = resp.data;
+                    const intervencoes = reparacoes
+                    .sort((a, b) => a.nome.localeCompare(b.nome));
 
+                    res.write(`
+                        <h1>Intervenções</h1>
+                        <hr style="border: 1px solid white; margin: 10px 0;">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            ${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(letter => 
+                                `<a href="/intervencoes?letter=${letter}" style="margin: 0 5px; text-decoration: none; color: lightblue; font-size: 18px;">${letter}</a>`
+                            ).join(' - ')}
+                        </div>
+                    `);
+
+                    intervencoes.forEach(element => {
+                        res.write(`<li>
+                            <a href='/reparacoes/${element.nif}'> ${element.nome}</a>  
+                            <ul>`); // Start a sublist for interventions
+                        
+                        element.intervencoes.forEach(interv => {
+                            res.write(`
+                                <li>
+                                    <strong>Cod:</strong> ${interv.codigo} - 
+                                    <strong>Nome:</strong> ${interv.nome}
+                                </li>
+                            `);
+                        });
+                        
+                        res.write(`</ul></li>`); // Close the sublist and main list item
+                        
+                        }
+                    );
+                        res.end();
+                    })
+                    .catch(error => {
+                        res.writeHead(501, { 'Content-Type': 'text/html;charset=utf-8' });
+                        res.write(error.toString());
+                        res.end();
+                    });
             }
+            else if (req.url.match(/\/intervencoes\?letter=./))
+                {
+                    var letra = req.url.split("=")[1];
+                    res.write(`<h1>${letra}</h1>`);
+                    axios.get(`http://localhost:3000/reparacoes?nome_like=^${letra}`)
+                        .then(resp => {
+                            var reparacoes = resp.data;
+                            reparacoes.forEach(element => {
+                            res.write(`<li>
+                                <a href='/reparacoes/${element.nif}'> ${element.nome}</a>  
+                                <ul>`); // Start a sublist for interventions
+                            
+                            element.intervencoes.forEach(interv => {
+                                res.write(`
+                                    <li>
+                                        <strong>Cod:</strong> ${interv.codigo} - 
+                                        <strong>Nome:</strong> ${interv.nome}
+                                    </li>
+                                `);
+                        });
+                        
+                        res.write(`</ul></li>`); // Close the sublist and main list item
+                        
+                        }
+                            );
+                            res.end();
+                        })
+                }
             else if (req.url.match(/\/reparacoes\?letter=./))
             {
                 var letra = req.url.split("=")[1];
@@ -147,6 +223,28 @@ http.createServer((req, res) => {
                         res.end();
                     })
             }
+            else if (req.url.match(/\/viaturas\?letter=./))
+                {
+                    var letra = req.url.split("=")[1];
+                    res.write(`<h1>${letra}</h1>`);
+                    axios.get(`http://localhost:3000/reparacoes`)
+                        .then(resp => {
+                            var reparacoes = resp.data;
+                            const viaturas = reparacoes.filter(rep => rep.viatura.marca.startsWith(letra)).sort((a, b) => a.viatura.marca.localeCompare(b.viatura.marca));
+                            
+                            const marcasUnicas = [...new Set(viaturas.map(v => v.viatura.marca))];
+                            res.write(`<p style="font-weight: bold; margin-bottom: 10px;text-align:center;">${marcasUnicas.join(" | ")}</p>`);
+
+            
+                            viaturas.forEach(element => {
+                                res.write(`<li>
+                                    <a href='/reparacoes/${element.nif}'> ${element.viatura.marca} - ${element.viatura.modelo} ${element.viatura.matricula}</a>
+                                   </li>`);
+                                }
+                            );
+                            res.end();
+                        })
+                }
             else if (req.url.match(/\/reparacoes\/.+/)) {
                 var nif = req.url.split("/")[2];
                 axios.get(`http://localhost:3000/reparacoes?nif=${nif}`)
@@ -154,7 +252,7 @@ http.createServer((req, res) => {
                         var reparacao = resp.data[0];
                         res.write(`<h1>${reparacao.nome}</h1>`);
                         res.write(`<pre>${JSON.stringify(reparacao, null, 2)}</pre>`);
-                        res.write("<h6><a href='/reparacoes'>Voltar</a></h6>");
+                        res.write("<h1 onclick='window.history.back()'style='font-size: 20px; padding: 15px 30px; background-color: darkgray;width:50%; color: white; border: none; border-radius: 10px; cursor: pointer;'> Voltar </h1>");
                         res.end();
                     })
                     .catch(error => {
