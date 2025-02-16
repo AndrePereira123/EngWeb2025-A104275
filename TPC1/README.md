@@ -52,10 +52,10 @@ A impressão é "rude", direta do ficheiro json associado ao usufruir da funçã
 
 # Usufruir do serviço
 
-O serviço está implementado no ficheiro [Servidor.js](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC1/Servidor.js); para usufruir do mesmo é necessário inicializar o json-server sob o dataset relevante com: 
- - "json-server --watch dataset_reparacoes.json"
+O serviço está implementado no ficheiro [Servidor.js](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC1/Servidor.js); para usufruir do mesmo é necessário inicializar o json-server sob o [dataset relevante](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC1/dataset_reparacoes.json) com: 
+ - "json-server --watch dataset_reparacoes.json" 
 
 Depois recorrendo ao nodejs, o serviço em si:
- - "node ...\Servidor.js"
+ - "node ...\Servidor.js" 
 
 Agora deve ser possível aceder ao [URL da página inicial](http://localhost:12000/reparacoes) e navegar com o auxílio dos menus implementados.
