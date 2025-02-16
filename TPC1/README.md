@@ -1,7 +1,10 @@
 # PL2025-A104275
-## André Filipe Soares Pereira
+# TPC-1
+## André Filipe Soares Pereira || A104275
 
-## Desafio proposto nesta semana
+### Problema proposto
+Para o primeiro trabalho semanal foi proposta a implementação de "um serviço em nodejs que consuma a API de dados servida pelo json-server da oficina de reparações e responda com as páginas web do site"
+de forma similar ao serviço implementado durante as aulas praticas(sob o qual baseei o meu código).
 
 ## Requisitos (tal como na aula)
 
