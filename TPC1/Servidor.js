@@ -62,7 +62,7 @@ http.createServer((req, res) => {
         </head>
         <body>
             <div class="sidenav">
-                <a href="/reparacoes">Reparacoes</a>
+                <a href="/reparacoes">Reparações</a>
                 <a href="/viaturas">Viaturas</a>
                 <a href="/intervencoes">Intervenções</a>
             </div>
