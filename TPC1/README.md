@@ -1,8 +1,7 @@
-# PL2025-A104275
-### TPC-1
-### André Filipe Soares Pereira || A104275
+# PL2025-A104275 ||  André Filipe Soares Pereira || A104275
+# TPC-1 - Serviço em nodejs
 
-# Problema proposto
+
 Para o primeiro trabalho semanal foi proposta a implementação de "um serviço em nodejs que consuma a API de dados servida pelo json-server da oficina de reparações e responda com as páginas web do site"
 de forma similar ao [serviço implementado durante as aulas práticas](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC1/codigo_produzido_na_aula)(sob o qual baseei o meu código).
 
