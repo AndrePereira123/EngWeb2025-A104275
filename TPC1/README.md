@@ -1,5 +1,5 @@
 # PL2025-A104275 ||  André Filipe Soares Pereira || A104275
-# TPC-1 - Serviço em nodejs
+# TPC-1 - Oficina de Reparações (serviço em nodejs(1))
 
 
 Para o primeiro trabalho semanal foi proposta a implementação de "um serviço em nodejs que consuma a API de dados servida pelo json-server da oficina de reparações e responda com as páginas web do site"
