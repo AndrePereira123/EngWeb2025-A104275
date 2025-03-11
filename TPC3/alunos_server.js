@@ -39,25 +39,46 @@ var alunosServer = http.createServer((req, res) => {
     else{
         switch(req.method){
             case "GET": 
-                if (req.url === "/" || req.url === "alunos"){
-                    //TODO
-                    res.writeHead(405,{"Content-Type":"text/html;charset=utf-8"})
-                }
-
-                // http://localhost:3000/alunos
-
+            
                 // GET /alunos --------------------------------------------------------------------
                 
+                if (req.url === "/" || req.url === "/alunos"){
+                    axios.get('http://localhost:3000/alunos')
+                        .then(resp => {
+                            alunos = resp.data
+                            res.writeHead(200,{'Content-Type':"text/html;charset=utf-8"})
+                            res.write(templates.studentsListPage(alunos,d))
+                            res.end()
+                        })
+                        .catch(erro => {
+                            console.log(erro)
+                            res.writeHead(500,{'Content-Type':"text/html;charset=utf-8"})
+                            res.end()
+                        })
+                    }
+
                 // GET /alunos/:id --------------------------------------------------------------------
                 
-                else if (req.url.match(/\/alunos\/(A | PG)d+$/))
+                else if (req.url.match(/\/alunos\/(A|PG)\d+$/))
                 {
-                    //TODO
-                    res.writeHead(405,{"Content-Type":"text/html;charset=utf-8"})
-                }
+                    id = req.url.split('/')[2]
+                    axios.get('http://localhost:3000/alunos/' + id)
+                        .then(resp => {
+                            aluno = resp.data
+                            res.writeHead(200,{'Content-Type':"text/html;charset=utf-8"})
+                            res.write(templates.studentPage(aluno,d))
+                            res.end()
+                        })
+                        .catch(erro => {
+                            console.log(erro)
+                            res.writeHead(500,{'Content-Type':"text/html;charset=utf-8"})
+                            res.end()
+                        })
+                    }
+
                 // GET /alunos/registo --------------------------------------------------------------------
                 
-                if (req.url === "/alunos/registo"){
+                else if (req.url === "/alunos/registo"){
                     //TODO
                     res.writeHead(405,{"Content-Type":"text/html;charset=utf-8"})
                     res.write(templates.studentFormPage(d))
@@ -85,16 +106,30 @@ var alunosServer = http.createServer((req, res) => {
                    
                 // GET /alunos/delete/:id --------------------------------------------------------------------
                 
-                else if (req.url.match(/\/alunos\/delete\/(A | PG)d+$/))
+                else if (req.url.match(/\/alunos\/delete\/(A|PG)\d+$/))
                     {
-                        //TODO
-                        res.writeHead(405,{"Content-Type":"text/html;charset=utf-8"})
+                        id = req.url.split('/')[3]
+                        console.log(id)
+                        axios.delete('http://localhost:3000/alunos/' + id)
+                        .then(resp => {
+                            aluno = resp.data
+                            res.writeHead(200,{'Content-Type':"text/html;charset=utf-8"})
+                            res.write(templates.deletePage(id,d))
+                            res.end()
+                        })
+                        .catch(erro => {
+                            console.log(erro)
+                            res.writeHead(500,{'Content-Type':"text/html;charset=utf-8"})
+                            res.write("O aluno nao existe")
+                            res.end()
+                        })
                     }
 
                 // GET ? -> Lancar um erro
                 
                 else {
                     res.writeHead(404,{"Content-Type":"text/html;charset=utf-8"})
+                    res.end()
                 }
                 break
             case "POST":
@@ -120,6 +155,9 @@ var alunosServer = http.createServer((req, res) => {
                             res.end()
                         }
                     })
+                                        
+                // POST /alunos/edit/:id --------------------------------------------------------------------
+
                 } else if  (req.url.match(/\/alunos\/edit\/(A|PG)\d+$/)){
                     id = req.url.split('/')[3]
                     collectRequestBodyData(req,result => {
@@ -144,8 +182,6 @@ var alunosServer = http.createServer((req, res) => {
                 }
                 
                 break
-                // POST /alunos/edit/:id --------------------------------------------------------------------
-
                 // POST ? -> Lancar um erro
 
         

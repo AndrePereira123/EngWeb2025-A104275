@@ -34,7 +34,7 @@ exports.studentsListPage = function(slist, d){
                             ${slist[i].nome}
                         </a>
                     </td>
-                    <td>${slist[i].gitlink}</td>
+                    <td>${slist[i].git}</td>
                     <td>
                         [<a href="/alunos/edit/${slist[i].id}">Edit</a>][<a href="/alunos/delete/${slist[i].id}">Delete</a>]
                     </td>
@@ -138,7 +138,7 @@ exports.studentFormEditPage = function(a, d){
                         <label>Name</label>
                         <input class="w3-input w3-round" type="text" name="nome" value="${a.nome}"/>
                         <label>Git</label>
-                        <input class="w3-input w3-round" type="text" name="gitlink" value="${a.gitlink}"/>
+                        <input class="w3-input w3-round" type="text" name="gitlink" value="${a.git}"/>
                     </fieldset>
 
                     <fieldset>
@@ -195,7 +195,7 @@ exports.studentPage = function( aluno, d ){
                 <ul class="w3-ul w3-card-4" style="width:50%">
                     <li><b>Nome: </b> ${aluno.nome}</li>
                     <li><b>Número: </b> ${aluno.id}</li>
-                    <li><b>Git (link): </b> <a href="${aluno.gitlink}">${aluno.gitlink}</a></li>
+                    <li><b>Git (link): </b> <a href="${aluno.git}">${aluno.git}</a></li>
                 </ul>
             </div>
             <div class="w3-container w3-margin-8">
@@ -212,6 +212,26 @@ exports.studentPage = function( aluno, d ){
     
 
     pagHTML +=     `</ul></div>
+            <footer class="w3-container w3-teal">
+                <address>Gerado por galuno::RPCW2022 em ${d} - [<a href="/">Voltar</a>]</address>
+            </footer>
+        </div>
+    </body>
+    </html>
+    `
+    return pagHTML
+}
+
+exports.deletePage = function( id, d ){
+    var pagHTML = `
+    <html>
+    <head>
+        <title>O Aluno com id ${id} foi eliminado</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="favicon.png"/>
+        <link rel="stylesheet" href="w3.css"/>
+    </head>
+    <body> 
             <footer class="w3-container w3-teal">
                 <address>Gerado por galuno::RPCW2022 em ${d} - [<a href="/">Voltar</a>]</address>
             </footer>
