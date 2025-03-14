@@ -9,7 +9,7 @@ Para a terceira semana foi pedida a conclusão da implementação de um serviço
 
 - [Página de aluno com o seu nome, número e git](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc3/pagina_aluno.html)
 
-- [Página de criação de aluno](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc3/pagina_criacao.html)
+- [Página de registo de aluno](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc3/pagina_registo.html)
 
 - [Página de edição de aluno](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc3/pagina_edicao.html)
 
