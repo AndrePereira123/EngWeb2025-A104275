@@ -25,6 +25,9 @@ O [dataset](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC2
 O serviço está implementado no ficheiro [alunos_server.js](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC3/alunos_server.js); para usufruir do mesmo é necessário inicializar o json-server sob o [dataset relevante](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC3/dataset_alunos.json) com: 
  - "json-server --watch dataset_alunos.json" 
 
+(O dataset pode ser alterado com a edição e remoção de alunos, logo existe um [backup](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC3/dataset_preservado)) 
+
+
 Depois recorrendo ao nodejs, o serviço em si:
  - "node ...\alunos_server.js" 
 
