@@ -2,33 +2,21 @@
 # TPC-3 - Gestor de Alunos (serviço em nodejs(3))
 
 
-Para o segundo trabalho semanal foi proposto "Construir um serviço em nodejs, que consuma a API de dados servida pelo json-server da escola de música (implementada na segunda aula teórica) e sirva um website com as seguintes caraterísticas:
+Para a terceira semana foi pedida a conclusão da implementação de um serviço em nodejs similar aos desenvolvidos nas semanas anteriores ([TPC1](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC1)/[TPC2](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC2)) mas, agora, com "Envio de informação com HTML Forms: GET e POST", "Recuperação da informação do body do pedido" e 
+"Tratamento de recursos estáticos". Com isto foram implementadas:
 
-- Página principal: Listar alunos, Listar Cursos, Listar Instrumentos;
+- Página principal: Listar alunos.
 
-- Página de alunos: Tabela com a informação dos alunos (clicando numa linha deve saltar-se para a página de aluno);
+- Página de aluno com o seu nome, número e git;
 
-- Página de cursos: Tabela com a informação dos cursos (clicando numa linha deve saltar-se para a página do curso onde deverá aparecer a lista de alunos a frequentá-lo);
+- Página de criação de aluno.
 
-- Página de instrumentos: Tabela com a informação dos instrumentos (clicando numa linha deve saltar-se para a página do instrumento onde deverá aparecer a lista de alunos que o tocam).
+- Página de edição de aluno.
 
-Mais uma vez o trabalho a realizar assemelha-se àquele desenvolvido nas aulas práticas pelo que pude recorrer ao mesmo e facilitar o processo de implementação.
+- Página de remover aluno.
 
-O [dataset fornecido](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC2/dataset.json) apresenta uma lista de "alunos","cursos" e "instrumentos". Cada aluno guarda:
-  - id
-  - nome
-  - dataNasc
-  - curso
-  - anoCurso
-  - instrumento (apenas o nome)
 
-Cada curso tem 3 campos:
-  - id
-  - designacao
-  - duracao
-  - instrumento (id e nome)
-    
-Cada instrumento apresenta apenas um "id" e nome que se denomina por "#text".
+O [dataset fornecido](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC2/dataset.json).
 
 
 # Implementação
