@@ -1,11 +1,6 @@
 {
   "alunos": [
     {
-      "id": "A100758",
-      "nome": "Hugo Arantes Dias",
-      "git": "https://github.com/hugodiasUM/EngWeb2024/tree/main"
-    },
-    {
       "id": "A100615",
       "nome": "João Miguel Mendes Moura",
       "git": "https://github.com/joaomoura12/EngWeb2024"
