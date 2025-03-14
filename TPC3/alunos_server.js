@@ -141,7 +141,7 @@ var alunosServer = http.createServer((req, res) => {
                             axios.post(("http://localhost:3000/alunos"),result)
                                 .then(resp => {
                                     res.writeHead(201,{"Content-Type":"text/html;charset=utf-8"})
-                                    res.write(`<p>Registo inserido: ${JSON.stringify(resp.data)}</p>`)
+                                    res.write(templates.createdPage(result.id,d,resp.data))
                                     res.end()
                                 })
                                 .catch(erro => {
@@ -165,7 +165,7 @@ var alunosServer = http.createServer((req, res) => {
                             axios.put(("http://localhost:3000/alunos/") + result.id , result)
                                 .then(resp => {
                                     res.writeHead(200,{"Content-Type":"text/html;charset=utf-8"})
-                                    res.write(`<p>Registo inserido: ${JSON.stringify(resp.data)}</p>`)
+                                    res.write(templates.editedPage(result.id,d,resp.data))
                                     res.end()
                                 })
                                 .catch(erro => {
@@ -181,10 +181,15 @@ var alunosServer = http.createServer((req, res) => {
                     })
                 }
                 
-                break
                 // POST ? -> Lancar um erro
 
-        
+                else {
+                    res.writeHead(404,{"Content-Type":"text/html;charset=utf-8"})
+                    res.end()
+                }
+                
+                break
+                
             case "DELETE":
             default: 
                 // Outros metodos nao sao suportados
