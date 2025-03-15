@@ -1,20 +1,6 @@
 {
   "filmes": [
     {
-      "id": 10,
-      "title": "American Psycho",
-      "year": "2000",
-      "cast": [
-        "Christian Bale",
-        "Chloë Sevigny",
-        "Willem Dafoe"
-      ],
-      "genres": [
-        "Comedy34",
-        "Thriller"
-      ]
-    },
-    {
       "id": 11,
       "title": "Animal Factory",
       "year": 2000,

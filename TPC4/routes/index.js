@@ -47,6 +47,19 @@ router.get('/filmes/delete/:id', function(req, res) { //- pedido - resposta -
   
 });
 
+router.get('/ator/:nome', function(req, res) { //- pedido - resposta -
+  const nome_ator = req.params.nome
+  axios.get("http://localhost:3000/filmes")
+    .then(resp => {
+      res.render("ator",{lfilmes:resp.data,tit:"Lista de Filmes com o ator " + nome_ator,ator: nome_ator})
+    })
+    .catch(error =>{
+        console.log(error);
+        res.render("error",{error: error})
+        }
+    )
+});
+
 router.get('/filmes/edit/:id', function(req, res) { //- pedido - resposta -
   const filmeId = req.params.id;
   axios.get("http://localhost:3000/filmes/" + filmeId)
@@ -81,6 +94,8 @@ router.post('/filmes/edit/:id', function(req, res) { //- pedido - resposta -
         }
     )
 });
+
+
 
 
 
