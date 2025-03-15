@@ -9,8 +9,8 @@ na Universidade do Minho.
 Tarefas semanais:
   - [TPC1 - Serviço em nodejs com recurso a API de dados do json-server(1)(Oficina de Reparações)](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC1)
   - [TPC2 - Serviço em nodejs com recurso a API de dados do json-server(2)(Escola de Música)](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC2)
-  - [TPC3 - XXX]
-  - [TPC4 - XXX]
-  - [TPC5 - XXX]
-  - [TPC6 - XXX]
-  - [TPC7 - XXX]
+  - [TPC3 - Serviço em nodejs com recurso a API de dados do json-server(3)(Gestor de TPC´s de alunos)](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC3)
+  - [TPC4 - XXX](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC4)
+  - [TPC5 - XXX](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC5)
+  - [TPC6 - XXX](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC6)
+  - [TPC7 - XXX](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC7)
