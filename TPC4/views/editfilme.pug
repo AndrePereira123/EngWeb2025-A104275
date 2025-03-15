@@ -1,0 +1,32 @@
+
+
+extends layout
+block content
+    .w3-card-4
+        header.w3-container.w3-orange
+            h1= tit
+            h4
+              a(href = "/filmes") Voltar
+        form.w3-container(method="POST")
+            fieldset
+                legend Metadata
+                label Id
+                input.w3-input.w3-round(type="text" name="id" readonly value=filme.id)
+                label Nome
+                input.w3-input.w3-round(type="text" name="title" value=filme.title)
+                label Ano
+                input.w3-input.w3-round(type="text" name="year" value=filme.year)
+
+            fieldset
+                legend Cast
+                each c in cast
+                    input.w3-input.w3-round(type="text" name="cast" value=c)
+            fieldset 
+                legend Genres 
+                each g in genres
+                    input.w3-input.w3-round(type="text" name="genres" value=g)
+
+            br
+            button.w3-btn.w3-purple.w3-mb-2(type="submit") Register
+  
+
