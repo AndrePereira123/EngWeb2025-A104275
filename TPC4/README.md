@@ -27,3 +27,7 @@ A página de ator é acessível ao clicar no nome de qualquer ator no "cast" de 
  - Agora com o comando ```npm start``` o serviço deve iniciar e ser acessível pelo [URL da página inicial](http://localhost:2510)
 
 (O dataset pode ser alterado com a edição e remoção de filmes, logo existe um [backup](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC4/dataset_inicial.json))
+
+## Lista de páginas
+
+[Página Inicial](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/iniciol.html)
