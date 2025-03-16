@@ -16,8 +16,17 @@ Uma boa parte do serviço foi implementado no decorrer da aula teórica, deste m
 
 # Implementação
 
-Para permitir editar e apagar filmes do dataset, adicionei 2 botões, "Editar" e "Apagar", na página de lista de filmes. Ao clicar em editar é apresentado um formulário pré-preenchido com os dados atuais do filme e botões adicionais para adicionar atores ao elenco(cast) ou novos gêneros(genres). Ao clicar em "Apagar" o filme é imediatamente removido do dataset e uma página simples avisa o utilizador que o filme foi removido permitindo apenas voltar à lista de filmes. 
+Para permitir editar e apagar filmes do dataset, adicionei 2 botões, "Editar" e "Apagar", na página de lista de filmes. 
 
+ - [Editar](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/editar.htm)
+Ao clicar em editar é apresentado um formulário pré-preenchido com os dados atuais do filme e botões adicionais para adicionar atores ao elenco(cast) ou novos gêneros(genres).
+
+
+ - [Apagar](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/apagar.htm)
+Ao clicar em "Apagar" o filme é imediatamente removido do dataset e uma página simples avisa o utilizador que o filme foi removido permitindo apenas voltar à lista de filmes. 
+
+
+ - [Ator](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/arnold.htm)
 A página de ator é acessível ao clicar no nome de qualquer ator no "cast" de qualquer filme da lista de filmes; nesta página temos uma lista de filmes identica, mas filtrada para incluir apenas os filmes relevantes e onde não é possível clicar no nome de atores para aceder às suas respetivas páginas.
 
 # Usufruir do serviço
