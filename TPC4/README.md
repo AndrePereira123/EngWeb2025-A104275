@@ -30,4 +30,8 @@ A página de ator é acessível ao clicar no nome de qualquer ator no "cast" de 
 
 ## Lista de páginas
 
-[Página Inicial](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/iniciol.html)
+[Página Inicial](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/inicio.html)
+[Página Filmes](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/lista_filmes.html)
+[Página de Ator](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/arnold.html)
+[Página de Editar](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/editar.html)
+[Página de Apagar](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc4/apagar.html)
