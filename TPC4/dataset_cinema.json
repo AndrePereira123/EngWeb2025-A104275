@@ -1,6 +1,146 @@
 {
   "filmes": [
     {
+      "id": 1,
+      "title": "102 Dalmatians",
+      "year": 2000,
+      "cast": [
+        "Glenn Close",
+        "Gérard Depardieu",
+        "Alice Evans"
+      ],
+      "genres": [
+        "Comedy",
+        "Family"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "28 Days",
+      "year": 2000,
+      "cast": [
+        "Sandra Bullock",
+        "Viggo Mortensen"
+      ],
+      "genres": [
+        "Drama"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "3 Strikes",
+      "year": 2000,
+      "cast": [
+        "Brian Hooks",
+        "N'Bushe Wright"
+      ],
+      "genres": [
+        "Comedy"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The 6th Day",
+      "year": 2000,
+      "cast": [
+        "Arnold Schwarzenegger",
+        "Robert Duvall"
+      ],
+      "genres": [
+        "Science Fiction"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Across the Line",
+      "year": 2000,
+      "cast": [
+        "Brad Johnson",
+        "Adrienne Barbeau",
+        "Brian Bloom"
+      ],
+      "genres": [
+        "Thriller"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Adventures in Wild California",
+      "year": 2000,
+      "cast": [
+        "Jimmy Smits",
+        "(Narrator)"
+      ],
+      "genres": [
+        "Documentary"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "The Adventures of Rocky and Bullwinkle",
+      "year": 2000,
+      "cast": [
+        "Rene Russo",
+        "Jason Alexander",
+        "Robert De Niro",
+        "Piper Perabo",
+        "June Foray",
+        "Keith Scott"
+      ],
+      "genres": [
+        "Comedy"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "All the Pretty Horses",
+      "year": 2000,
+      "cast": [
+        "Matt Damon",
+        "Penélope Cruz",
+        "Henry Thomas",
+        "Lucas Black",
+        "Rubén Blades",
+        "Míriam Colón",
+        "Bruce Dern"
+      ],
+      "genres": [
+        "Western"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Almost Famous",
+      "year": 2000,
+      "cast": [
+        "Billy Crudup",
+        "Frances McDormand",
+        "Kate Hudson",
+        "Jason Lee",
+        "Patrick Fugit",
+        "Anna Paquin",
+        "Fairuza Balk"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "American Psycho",
+      "year": 2000,
+      "cast": [
+        "Christian Bale",
+        "Chloë Sevigny",
+        "Willem Dafoe"
+      ],
+      "genres": [
+        "Comedy",
+        "Thriller"
+      ]
+    },
+    {
       "id": 11,
       "title": "Animal Factory",
       "year": 2000,
@@ -21,6 +161,31 @@
       "cast": [
         "Wesley Snipes",
         "Donald Sutherland"
+      ],
+      "genres": [
+        "Action"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Autumn in New York",
+      "year": 2000,
+      "cast": [
+        "Richard Gere",
+        "Winona Ryder"
+      ],
+      "genres": [
+        "Romance"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Bait",
+      "year": 2000,
+      "cast": [
+        "Jamie Foxx",
+        "David Morse",
+        "Kimberly Elise"
       ],
       "genres": [
         "Action"
@@ -66,6 +231,19 @@
       ]
     },
     {
+      "id": 18,
+      "title": "The Beach",
+      "year": 2000,
+      "cast": [
+        "Leonardo DiCaprio",
+        "Virginie Ledoyen",
+        "Tilda Swinton"
+      ],
+      "genres": [
+        "Adventure"
+      ]
+    },
+    {
       "id": 19,
       "title": "Beat",
       "year": 2000,
@@ -75,6 +253,19 @@
       ],
       "genres": [
         "Drama"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Beautiful",
+      "year": 2000,
+      "cast": [
+        "Minnie Driver",
+        "Hallie Kate Eisenberg",
+        "Kathleen Turner"
+      ],
+      "genres": [
+        "Comedy"
       ]
     },
     {
