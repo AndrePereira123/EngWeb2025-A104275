@@ -16,6 +16,8 @@ Uma boa parte do serviço foi implementado no deccorer da aula teórica, deste m
 
 # Implementação
 
+Para permitir editar e apagar filmes do dataset, adicionei 2 butões , "Editar" e "Apagar", na página de lista de filmes. Ao clicar em editar é apresentado um formulário pré preenchido com os dados atuais do filme e espaços adicinais para adicinar atores ao elenco(cast) ou novos gêneros(genres).
+
 # Usufruir do serviço
 
 O serviço está implementado no ficheiro [alunos_server.js](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC3/alunos_server.js); para usufruir do mesmo é necessário inicializar o json-server sob o [dataset relevante](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC3/dataset_alunos.json) com: 
