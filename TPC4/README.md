@@ -2,8 +2,13 @@
 # TPC-4 -  Cinema (serviço em express)
 
 
-Para a terceira semana foi pedida a conclusão da implementação de um serviço em nodejs similar aos desenvolvidos nas semanas anteriores ([TPC1](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC1)/[TPC2](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC2)) mas, agora, com "Envio de informação com HTML Forms: GET e POST", "Recuperação da informação do body do pedido" e 
-"Tratamento de recursos estáticos" para poder suportar as páginas a implementar:
+Para a quarta semana foi pedida a conclusão da implementação de um serviço depedente do express, onde utilizamos um dataset ["cinema"](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC4/dataset_inicial.json) onde existe uma lista de filmes com os atributos:
+ - title 
+ - year
+ - cast
+ - genres
+
+Vale ressatlar que náo existe um id associado a cada filmes, logo, para facilitar na utilização do axios principalmente no que toca ao remover (DELETE) de entradas, adcionei ids a todos os filmes através de um [script](https://github.com/AndrePereira123/EngWeb2025-A104275/blob/main/TPC4/add_id_json.py) em python.
 
 - [Página Inicial com a lista de alunos](https://andrepereira123.github.io/EngWeb2025-A104275/paginas_tpc3/pagina_inicial.html)
 
