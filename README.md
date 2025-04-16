@@ -11,6 +11,6 @@ Tarefas semanais:
   - [TPC2 - Serviço em nodejs com recurso a API de dados do json-server(2)(Escola de Música)](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC2)
   - [TPC3 - Serviço em nodejs com recurso a API de dados do json-server(3)(Gestor de TPC´s de alunos)](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC3)
   - [TPC-4 - Cinema (serviço em express)](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC4)
-  - [TPC5 - Api de alunos](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC5)
-  - [TPC6 - XXX](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC6)
+  - [TPC5 - Api de Alunos](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC5)
+  - [TPC6 - Api de Contratos](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/TPC6)
   - [Aferição](https://github.com/AndrePereira123/EngWeb2025-A104275/tree/main/ENGWEB2025-Afericao)
